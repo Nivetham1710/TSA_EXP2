@@ -1,25 +1,22 @@
-### Name: Nivetha M
-### Register number: 212221240034
 # Ex.No: 02 LINEAR AND POLYNOMIAL TREND ESTIMATION
-Date:27/2/2024
 ### AIM:
 To Implement Linear and Polynomial Trend Estiamtion Using Python.
 
 ### ALGORITHM:
-Import necessary libraries (NumPy, Matplotlib)
 
-Load the dataset
+**Step 1:** Import necessary libraries (NumPy, Matplotlib)
 
-Calculate the linear trend values using least square method
+**Step 2:** Load the dataset
 
-Calculate the polynomial trend values using least square method
+**Step 3:** Calculate the linear trend values using lLinearRegression Function.
 
-End the program
+**Step 4:** Calculate the polynomial trend values using PolynomialFeatures Function.
+
+**Step 5:** End the program
+
 ### PROGRAM:
 ## A - LINEAR TREND ESTIMATION
-```
-#Trend equation using Linear Equation
-
+```python
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -47,7 +44,7 @@ from sklearn.linear_model import LinearRegression
 lin = LinearRegression()
 lin.fit(X, y)
 n=len(x)
-b=(n*sum(xy)-sum(y)sum(X))/(n*sum(x2)-(sum(X)*2))
+b=(n*sum(xy)-sum(y)*sum(X))/(n*sum(x2)-(sum(X)**2))
 a=(sum(y)-b*sum(X))/n
 print("a=%.1f,b=%.1f"%(a,b))
 
@@ -65,13 +62,9 @@ plt.show()
 pred = 110.0
 predarray = np.array([[pred]])
 lin.predict(predarray)
-
 ```
-
 ## B- POLYNOMIAL TREND ESTIMATION
-```
-## Polynomial TRend EStimation 4th degree
-
+```python
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.linear_model import LinearRegression
@@ -118,19 +111,20 @@ pred2 = 110.0
 pred2array = np.array([[pred2]])
 lin2.predict(poly.fit_transform(pred2array))
 ```
-
 ### OUTPUT
 
-![image](https://github.com/Nivetham1710/TSA_EXP2/assets/94155183/04a9ce1d-a967-423e-bf88-4d7fc0e5e79a)
+#### Before Performing Trend Operations :
 
-![image](https://github.com/Nivetham1710/TSA_EXP2/assets/94155183/dc068916-8ed4-4a85-a4fe-6e212ecccc08)
+![image](https://github.com/Nivetham1710/TSA_EXP2/assets/94155183/3a99f02e-5d01-4e4e-92e0-8f9bb6ec6e23)
+
+### A - LINEAR TREND ESTIMATION
+
+![image](https://github.com/Nivetham1710/TSA_EXP2/assets/94155183/2f9ab1fc-1ddb-445a-b06b-8a5f057087ff)
 
 
-B- POLYNOMIAL TREND ESTIMATION
+### B- POLYNOMIAL TREND ESTIMATION
 
-![image](https://github.com/Nivetham1710/TSA_EXP2/assets/94155183/8f4ebace-1aa6-4eec-af5a-6a8966fee9d8)
-
-![image](https://github.com/Nivetham1710/TSA_EXP2/assets/94155183/5c5c9b3e-4d86-425e-88b0-6b9b9370e39a)
+![image](https://github.com/Nivetham1710/TSA_EXP2/assets/94155183/770620ba-8b33-4a20-a37a-d5c8bb8cbc93)
 
 
 ### RESULT:
